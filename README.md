@@ -1,5 +1,9 @@
+# Rock paper scissors game for Apple Watch
+
 Got an apple watch.
+
 Played around with it.
+
 Use XCode to further play around with it.
 
 And here is my first watchOS app!
