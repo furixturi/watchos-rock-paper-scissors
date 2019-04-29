@@ -19,6 +19,15 @@
 		585F24E222755CC00098222E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585F24E122755CC00098222E /* InterfaceController.swift */; };
 		585F24E422755CC00098222E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585F24E322755CC00098222E /* ExtensionDelegate.swift */; };
 		585F24E622755CC10098222E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585F24E522755CC10098222E /* Assets.xcassets */; };
+		58EE3704227699FB000B5BE6 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3701227699FB000B5BE6 /* paper.png */; };
+		58EE3705227699FB000B5BE6 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3701227699FB000B5BE6 /* paper.png */; };
+		58EE3706227699FB000B5BE6 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3702227699FB000B5BE6 /* rock.png */; };
+		58EE3707227699FB000B5BE6 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3702227699FB000B5BE6 /* rock.png */; };
+		58EE3708227699FB000B5BE6 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3703227699FB000B5BE6 /* scissors.png */; };
+		58EE3709227699FB000B5BE6 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3703227699FB000B5BE6 /* scissors.png */; };
+		58EE370A22769A74000B5BE6 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3701227699FB000B5BE6 /* paper.png */; };
+		58EE370B22769A74000B5BE6 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3702227699FB000B5BE6 /* rock.png */; };
+		58EE370C22769A74000B5BE6 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EE3703227699FB000B5BE6 /* scissors.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +89,9 @@
 		585F24E322755CC00098222E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		585F24E522755CC10098222E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		585F24E722755CC10098222E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58EE3701227699FB000B5BE6 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		58EE3702227699FB000B5BE6 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		58EE3703227699FB000B5BE6 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,7 @@
 		585F24BD22755CBE0098222E /* RockPaperScissorsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				58EE3700227699FB000B5BE6 /* imageAssets */,
 				585F24BE22755CBE0098222E /* AppDelegate.swift */,
 				585F24C022755CBE0098222E /* ViewController.swift */,
 				585F24C222755CBE0098222E /* Main.storyboard */,
@@ -153,6 +166,16 @@
 			);
 			path = "RockPaperScissorsSwift WatchKit Extension";
 			sourceTree = "<group>";
+		};
+		58EE3700227699FB000B5BE6 /* imageAssets */ = {
+			isa = PBXGroup;
+			children = (
+				58EE3701227699FB000B5BE6 /* paper.png */,
+				58EE3702227699FB000B5BE6 /* rock.png */,
+				58EE3703227699FB000B5BE6 /* scissors.png */,
+			);
+			path = imageAssets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -256,6 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EE3704227699FB000B5BE6 /* paper.png in Resources */,
+				58EE3706227699FB000B5BE6 /* rock.png in Resources */,
+				58EE3708227699FB000B5BE6 /* scissors.png in Resources */,
 				585F24C922755CBF0098222E /* LaunchScreen.storyboard in Resources */,
 				585F24C622755CBF0098222E /* Assets.xcassets in Resources */,
 				585F24C422755CBE0098222E /* Main.storyboard in Resources */,
@@ -268,6 +294,9 @@
 			files = (
 				585F24D622755CC00098222E /* Assets.xcassets in Resources */,
 				585F24D422755CC00098222E /* Interface.storyboard in Resources */,
+				58EE3707227699FB000B5BE6 /* rock.png in Resources */,
+				58EE3709227699FB000B5BE6 /* scissors.png in Resources */,
+				58EE3705227699FB000B5BE6 /* paper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +304,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EE370A22769A74000B5BE6 /* paper.png in Resources */,
+				58EE370B22769A74000B5BE6 /* rock.png in Resources */,
+				58EE370C22769A74000B5BE6 /* scissors.png in Resources */,
 				585F24E622755CC10098222E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +509,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Debug;
 		};
@@ -499,7 +531,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -518,7 +550,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Debug;
 		};
@@ -537,7 +569,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};

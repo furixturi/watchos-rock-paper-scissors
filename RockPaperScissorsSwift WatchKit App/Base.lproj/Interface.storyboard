@@ -1,14 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RockPaperScissorsSwift_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="machine" id="EN0-tV-ExN"/>
+                        <label width="1" height="0.40000000000000002" alignment="left" text="Result" textAlignment="center" id="Wxm-i0-FjA">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                        <separator alignment="left" id="5PY-mQ-sw6"/>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="U9g-rz-8ex">
+                            <items>
+                                <button width="0.29999999999999999" height="1" alignment="left" backgroundImage="rock" id="BfC-cn-M7A">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="rock" destination="AgC-eL-Hgc" id="svY-XT-nPS"/>
+                                    </connections>
+                                </button>
+                                <button width="0.29999999999999999" height="1" alignment="right" backgroundImage="scissors" id="rvG-WP-Qnf">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="scissors" destination="AgC-eL-Hgc" id="q81-Rv-7TQ"/>
+                                    </connections>
+                                </button>
+                                <button width="0.29999999999999999" height="1" alignment="center" backgroundImage="paper" id="w02-JV-bEG">
+                                    <connections>
+                                        <action selector="paper" destination="AgC-eL-Hgc" id="mVc-yA-Sj7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Bd9-kr-TCH">
+                            <items>
+                                <label alignment="left" text="Counter" id="9wk-tz-VTs"/>
+                                <timer alignment="right" id="XPX-rY-fon"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="counterLabel" destination="9wk-tz-VTs" id="6O2-Bd-dsV"/>
+                        <outlet property="opponentLabel" destination="EN0-tV-ExN" id="bRZ-a5-all"/>
+                        <outlet property="paperButton" destination="w02-JV-bEG" id="QKS-tz-ZHa"/>
+                        <outlet property="resultLabel" destination="Wxm-i0-FjA" id="bXH-AL-XGr"/>
+                        <outlet property="rockButton" destination="BfC-cn-M7A" id="yzh-KW-i3R"/>
+                        <outlet property="scissorsButton" destination="rvG-WP-Qnf" id="s3p-zA-3po"/>
+                        <outlet property="timer" destination="XPX-rY-fon" id="xLJ-jz-EXS"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
